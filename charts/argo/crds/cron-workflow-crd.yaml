@@ -9,10 +9,12 @@ spec:
   group: argoproj.io
   names:
     kind: CronWorkflow
+    listKind: CronWorkflowList
     plural: cronworkflows
     shortNames:
     - cronwf
     - cwf
+    singular: cronworkflow
   scope: Namespaced
   version: v1alpha1
   versions:
