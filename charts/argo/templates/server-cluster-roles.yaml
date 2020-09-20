@@ -47,9 +47,18 @@ rules:
   - get
 {{- end}}
 - apiGroups:
+  - ""
+  resources:
+  - events
+  verbs:
+  - watch
+  - create
+  - patch
+- apiGroups:
   - argoproj.io
   resources:
   - workflows
+  - workfloweventbindings
   - workflowtemplates
   - cronworkflows
   verbs:
